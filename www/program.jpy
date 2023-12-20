@@ -1,0 +1,3 @@
+global jpyRequest, jpyOutput, jpyHeader, jpyFile, jpyCode
+
+jpyOutput = "Hello There.<br><br>These are not the droids you're looking for...<br><br>"
