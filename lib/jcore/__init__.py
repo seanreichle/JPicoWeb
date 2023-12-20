@@ -85,7 +85,7 @@ class core():
                             if self.tick6 == self.maxticks:
                                 self.tick6 = 1
                                 self.tick7 += 1
-                                if self.tick7 = self.maxticks:
+                                if self.tick7 == self.maxticks:
                                     self.tick7 = 1
                                     self.tick8 += 1
                                     if self.tick8 == self.maxticks:
