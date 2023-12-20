@@ -1,3 +1,9 @@
-global jpyRequest, jpyOutput, jpyHeader, jpyFile, jpyCode
+global jpyRequest, jpyRawRequest, jpyOutput, jpyHeader, jpyFile, jpyCode
 
-jpyOutput = "Hello There.<br><br>These are not the droids you're looking for...<br><br>"
+
+jpyOutput = "Hello There.<br>These are not the droids you're looking for...<br><br>"
+
+jpyOutput += "<hr><font size='-1'>"
+jpyOutput += "<b>Request:</b> " + str(jpyRequest) + "<br>"
+jpyOutput += "<b>RawRequest:</b> " + str(jpyRawRequest) + "<br>"
+jpyOutput += "</font><hr>"
