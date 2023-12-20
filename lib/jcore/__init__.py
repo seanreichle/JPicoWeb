@@ -67,28 +67,28 @@ class core():
         
     def cpuCycle(self):
         self.tick1 = self.tick1 + 1
-        if self.tick1 > self.maxticks:
+        if self.tick1 == self.maxticks:
             self.tick1 = 1
             self.tick2 += 1
-            if self.tick2 > self.maxticks:
+            if self.tick2 == self.maxticks:
                 self.tick2 = 1
                 self.tick3 += 1
-                if self.tick3 > self.maxticks:
+                if self.tick3 == self.maxticks:
                     self.tick3 = 1
                     self.tick4 += 1
-                    if self.tick4 > self.maxticks:
+                    if self.tick4 == self.maxticks:
                         self.tick4 = 1
                         self.tick5 += 1
-                        if self.tick5 > self.maxticks:
+                        if self.tick5 == self.maxticks:
                             self.tick5 = 1 
                             self.tick6 += 1
-                            if self.tick6 > self.maxticks:
+                            if self.tick6 == self.maxticks:
                                 self.tick6 = 1
                                 self.tick7 += 1
-                                if self.tick7 > self.maxticks:
+                                if self.tick7 = self.maxticks:
                                     self.tick7 = 1
                                     self.tick8 += 1
-                                    if self.tick8 > self.maxticks:
+                                    if self.tick8 == self.maxticks:
                                         self.tick1 = 1
                                         self.tick2 = 0
                                         self.tick3 = 0
