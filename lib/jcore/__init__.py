@@ -98,7 +98,9 @@ class core():
                                         self.tick7 = 0
                                         self.tick8 = 0
                                         self.age += 1
-        return self.getCycleClock()
+                                        if self.age == self.maxticks:
+                                            self.age = 1
+                                            self.name = "Mr. J"
     
     def now(self):
         return (monotonic_ns() - self.t0)
