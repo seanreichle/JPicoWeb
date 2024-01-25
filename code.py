@@ -35,7 +35,6 @@ print("Loading J-HTTP")
 supervisor.set_next_code_file(filename = 'code.py', reload_on_error = False, reload_on_success = False)
 supervisor.runtime.autoreload = False
 
-cycleClock = 0
 jpyOutput = "Server Side jpy script output"
 jpyRequest = "Client Request"
 jpyRawRequest = ""
@@ -53,7 +52,7 @@ from jcore import core
 # Start the j-iot core
 jiot = core()
 jiot.boot(a0,a1,a2,a3)
-cycleClock = jiot.cpuCycle()
+jiot.cpuCycle()
 jiot.printCycleClock()
 
 import wifi
@@ -124,7 +123,7 @@ jiot.printCycleClock()
 
 while True:
     try:
-        cycleClock = jiot.cpuCycle()
+        jiot.cpuCycle()
         pool_result = server.poll()
         if pool_result == REQUEST_HANDLED_RESPONSE_SENT:
             # Do something only after handling a request
